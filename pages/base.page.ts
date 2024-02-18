@@ -7,7 +7,11 @@ export class BasePage {
 		this.page = page;
 	}
 
-	async goto(url: string, options?: {referer?: string, timeout?: number, waitUntil?: "load" | "domcontentloaded" | "networkidle" | "commit"}): Promise<void>{
+	async goto(url: string, options?: {
+		referer?: string,
+		timeout?: number,
+		waitUntil?: "load" | "domcontentloaded" | "networkidle" | "commit"
+	}): Promise<void>{
 		await this.page.goto(url, options);
 	}
 

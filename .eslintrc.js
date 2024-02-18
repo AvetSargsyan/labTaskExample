@@ -29,18 +29,11 @@ module.exports = {
 		"@typescript-eslint"
 	],
 	"rules": {
-		"indent": [
-			"error",
-			"tab"
-		],
-		"linebreak-style": [
-			"error",
-			"windows"
-		],
-      quotes: [
-        "warn",
-        "double"
-      ],
-		"semi": [2, "always"]
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "windows"],
+    "quotes": ["warn", "double"],
+		"semi": ["error", "always"],
+		"space-in-parens": ["error", "never"],
+		"max-len": ["error", { "code": 100, "tabWidth": 1 }],
 	}
 }

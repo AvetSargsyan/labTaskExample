@@ -3,7 +3,7 @@ import {test, expect} from "@playwright/test";
 import {POFactory} from "../../pages/pageFactory";
 import {urlData} from "../../data/url.data";
 import {credentialsData} from "../../data/credentials.data";
-import { titles } from "../../data/titles.data"
+import { titles } from "../../data/titles.data";
 
 let loginPage: ReturnType<POFactory["getLoginPage"]>;
 // let homePage: ReturnType<POFactory["getHomePage"]>;
@@ -79,7 +79,9 @@ test.describe("Check login page @integration", () => {
 		});
 
 		await test.step("Fill password and click 'Sign In' button", async () => {
-			await loginPage.loginWithEpamComponent.loginPasswordInput.fill(credentialsData.validUser.password!);
+			await loginPage.loginWithEpamComponent.loginPasswordInput.fill(
+				credentialsData.validUser.password!
+			);
 			await loginPage.loginWithEpamComponent.loginSignInBtn.click();
 		});
 
@@ -108,11 +110,17 @@ test.describe("Check login page @integration", () => {
 			).toBe(credentialsData.invalidUser.password);
 		});
 
-		await test.step("Click on 'Login' button", async () => {
-			await loginPage.loginBtn.click();
+		await test.step(
+			"Check page is not changed after click on 'Login' button",
+			async () => {
+				await loginPage.loginBtn.click();
 
-			await expect(loginPage.header).toBeVisible();
-			expect(await loginPage.url()).toBe(urlData.loginPage);
-		});
+				await expect(loginPage.header,
+					"Page header should be visible"
+				).toBeVisible();
+				expect(await loginPage.url(),
+					"Page url should be correct"
+				).toBe(urlData.loginPage);
+			});
 	});
 });
