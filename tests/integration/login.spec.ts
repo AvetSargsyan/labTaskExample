@@ -3,7 +3,7 @@ import {test, expect} from "@playwright/test";
 import {POFactory} from "../../pages/pageFactory";
 import {urlData} from "../../data/url.data";
 import {credentialsData} from "../../data/credentials.data";
-import { titles } from "../../data/titles.data";
+import { titles } from "../../data/titles.data"
 
 let loginPage: ReturnType<POFactory["getLoginPage"]>;
 // let homePage: ReturnType<POFactory["getHomePage"]>;
@@ -33,7 +33,7 @@ test.describe("Check login page @integration", () => {
 			).toBeVisible();
 			await expect(loginPage.header,
 				"Header text should be correct"
-			).toHaveText(titles.welcome)
+			).toHaveText(titles.welcome);
 			await expect(loginPage.loginWithEpamBtn,
 				"Login With EPAM btn should be visible"
 			).toBeVisible();
@@ -62,7 +62,7 @@ test.describe("Check login page @integration", () => {
 
 			await expect(loginPage.loginWithEpamComponent.loginHeader,
 				`Login component header title should be '${titles.signIn}'`
-			).toHaveText(titles.signIn)
+			).toHaveText(titles.signIn);
 		});
 
 		await test.step("Fill email and click 'Next button'", async () => {
@@ -75,19 +75,19 @@ test.describe("Check login page @integration", () => {
 			).toHaveText(credentialsData.validUser.email!.toLowerCase());
 			await expect(loginPage.loginWithEpamComponent.loginHeader,
 				"Password component header title should be correct"
-			).toHaveText(titles.enterPassword)
+			).toHaveText(titles.enterPassword);
 		});
 
 		await test.step("Fill password and click 'Sign In' button", async () => {
 			await loginPage.loginWithEpamComponent.loginPasswordInput.fill(credentialsData.validUser.password!);
 			await loginPage.loginWithEpamComponent.loginSignInBtn.click();
-		})
+		});
 
 		// toDo: Complete OTP step
 		// await test.step("Complete OTP", async () => {
 		//      await homePage.logo.waitFor()
 		// })
-	})
+	});
 
 	test("Check login with invalid credentials on login page", async () => {
 		await test.step("Fill invalid email into email input", async () => {
@@ -96,7 +96,7 @@ test.describe("Check login page @integration", () => {
 
 			expect(valueAttribute,
 				"Email field should be filled correct"
-			).toBe(credentialsData.invalidUser.email)
+			).toBe(credentialsData.invalidUser.email);
 		});
 
 		await test.step("Fill invalid password into password input", async () => {
@@ -105,14 +105,14 @@ test.describe("Check login page @integration", () => {
 
 			expect(valueAttribute,
 				"Password field should be filled correct"
-			).toBe(credentialsData.invalidUser.password)
+			).toBe(credentialsData.invalidUser.password);
 		});
 
 		await test.step("Click on 'Login' button", async () => {
 			await loginPage.loginBtn.click();
 
 			await expect(loginPage.header).toBeVisible();
-			expect(await loginPage.url()).toBe(urlData.loginPage)
-		})
-	})
+			expect(await loginPage.url()).toBe(urlData.loginPage);
+		});
+	});
 });

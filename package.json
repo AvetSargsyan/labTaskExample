@@ -1,10 +1,10 @@
 {
 	"name": "test",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "Lab task",
 	"scripts": {
-		"lint:fix": "npx eslint --fix ../test/**",
+		"lint": "npx eslint --color ../labTaskExample/**/*.ts",
+		"lint:fix": "npx eslint --fix --color ../labTaskExample/**/*.ts",
 		"test:integration": "npx playwright test --headed --grep @integration",
 		"test:e2e": "npx playwright test --config=playwright.config.ts --headed --grep @e2e",
 		"prepare": "husky install"

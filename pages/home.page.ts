@@ -10,6 +10,6 @@ export class HomePage extends BasePage{
 	constructor(page: Page) {
 		super(page);
 		this.logo = page.locator("[class^=layout__corner-area]");
-		page.url()
+		page.url();
 	}
 }

@@ -15,6 +15,6 @@ export class POFactory {
 	}
 
 	getHomePage () {
-		return new HomePage(this.page)
+		return new HomePage(this.page);
 	}
 }

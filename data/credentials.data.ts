@@ -9,4 +9,4 @@ export const credentialsData = {
 		email: "fake.user@mail.com",
 		password: "qwerty123"
 	}
-}
+};

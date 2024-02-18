@@ -27,6 +27,6 @@ export class LoginPage extends BasePage{
 		this.loginInput = page.locator("input[name=login]");
 		this.passwordInput = page.locator("input[name=password]");
 		this.forgotPasswordLink = page.locator("[class^=loginForm__forgot-pass]");
-		this.privacyPolicyLink = page.locator("a[href$=PrivacyPolicy]")
+		this.privacyPolicyLink = page.locator("a[href$=PrivacyPolicy]");
 	}
 }

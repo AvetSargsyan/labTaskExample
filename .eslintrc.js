@@ -40,6 +40,7 @@ module.exports = {
       quotes: [
         "warn",
         "double"
-      ]
-  }
+      ],
+		"semi": [2, "always"]
+	}
 }
