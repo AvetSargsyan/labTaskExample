@@ -1,5 +1,7 @@
-import {envData} from "./envDataProcessor.data";
+import envData from "./envDataProcessor.data";
 
 export const urlData = {
-	loginPage: `${envData.basUrl}/ui/#login`,
+	loginPage: `${envData.baseUrl}/ui/#login`,
+	dashboardPage: (userName: string) : string =>
+		`${envData.baseUrl}/ui/#${userName.toLowerCase()}_personal/dashboard`
 };
