@@ -1,0 +1,30 @@
+{
+	"name": "test",
+	"version": "1.0.0",
+	"description": "Lab task",
+	"scripts": {
+		"lint": "npx eslint --color ../labTaskExample/**/*.ts",
+		"lint:fix": "npx eslint --fix --color ../labTaskExample/**/*.ts",
+		"test:integration": "npx playwright test --headed --grep @integration",
+		"test:e2e": "npx playwright test --config=playwright.config.ts --headed --grep @e2e",
+		"prepare": "husky install"
+	},
+	"keywords": [],
+	"author": "Avet Sargsyan",
+	"license": "ISC",
+	"devDependencies": {
+		"@playwright/test": "^1.41.2",
+		"@types/node": "^20.11.19",
+		"@typescript-eslint/eslint-plugin": "^6.21.0",
+		"dotenv": "^16.4.4",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-config-standard-with-typescript": "^43.0.1",
+		"eslint-plugin-import": "^2.29.1",
+		"eslint-plugin-n": "^16.6.2",
+		"eslint-plugin-promise": "^6.1.1",
+		"husky": "^8.0.0",
+		"prettier": "^3.2.5",
+		"typescript": "^5.3.3"
+	}
+}

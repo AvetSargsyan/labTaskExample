@@ -1,0 +1,8 @@
+<component name="CopyrightManager">
+  <settings>
+    <LanguageOptions name="JavaScript" />
+    <LanguageOptions name="TypeScript">
+      <option name="fileTypeOverride" value="3" />
+    </LanguageOptions>
+  </settings>
+</component>
