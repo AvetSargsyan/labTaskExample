@@ -28,8 +28,8 @@ module.exports = {
   },
   plugins: ["@typescript-eslint"],
   rules: {
-    indent: ["error", "tab"],
-    "linebreak-style": ["error", "windows"],
+    indent: ["off", "tab"],
+    "linebreak-style": ["off", "windows"],
     quotes: ["warn", "double"],
     semi: ["error", "always"],
     "space-in-parens": ["error", "never"],

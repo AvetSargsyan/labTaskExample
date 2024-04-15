@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea286cd7-73df-4456-84f6-05ade39b1d36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/data/types.data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/apiRequest.helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/launches.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/components/sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/launches.page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/integration/lanuches.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.sample" beforeDir="false" afterPath="$PROJECT_DIR$/.env.sample" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/envDataProcessor.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/envDataProcessor.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/url.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/url.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pageFactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pageFactory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/login.spec.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="test(N001)-Initial-Part" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2cUzOmO4fNdi4xQ8WeXG9DFlDHy" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/WorkDirectories/labTaskExample",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\WorkDirectories\\labTaskExample\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "C:\\WorkDirectories\\labTaskExample\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WorkDirectories\test\tests\e2e" />
+      <recent name="C:\WorkDirectories\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\WorkDirectories\labTaskExample\pages\components" />
+      <recent name="C:\WorkDirectories\labTaskExample\src" />
+      <recent name="C:\WorkDirectories\test" />
+      <recent name="C:\WorkDirectories\test\configurations" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.test:integration">
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test:integration" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:integration" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test:integration" />
+        <item itemvalue="npm.lint:fix" />
+        <item itemvalue="npm.run" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea286cd7-73df-4456-84f6-05ade39b1d36" name="Changes" comment="" />
+      <created>1708180915418</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708180915418</updated>
+      <workItem from="1708180916720" duration="18818000" />
+      <workItem from="1708270954784" duration="2476000" />
+      <workItem from="1708604705401" duration="11985000" />
+      <workItem from="1708673283543" duration="2581000" />
+      <workItem from="1709376074144" duration="2203000" />
+      <workItem from="1709533497308" duration="48000" />
+      <workItem from="1709548836252" duration="5103000" />
+      <workItem from="1709712750059" duration="258000" />
+      <workItem from="1709713027297" duration="3057000" />
+      <workItem from="1709737094629" duration="7791000" />
+      <workItem from="1709903496158" duration="9798000" />
+      <workItem from="1709983947561" duration="8601000" />
+      <workItem from="1710312489472" duration="1247000" />
+      <workItem from="1710575448137" duration="13186000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

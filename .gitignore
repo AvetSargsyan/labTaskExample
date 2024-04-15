@@ -4,4 +4,4 @@ node_modules
 /playwright-report/
 /playwright/.cache/
 package-lock.json
-.idea
+.idea/**/*.ts|tsx|xml
