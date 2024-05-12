@@ -1,25 +1,25 @@
-import { expect, test } from "@playwright/test";
+import {expect, test} from "@playwright/test";
 import jsonpath from "jsonpath/index";
 
-import { POFactory } from "../../pages/pageFactory";
-import { urlData } from "../../data/url.data";
-import { credentialsData } from "../../data/credentials.data";
-import { waitForCondition } from "../../helpers/common.helper";
-import { getLaunchesComponentsData } from "../../helpers/apiRequest.helper";
-import { LaunchesAPIDataType, LaunchesUIDataType } from "../../data/types.data";
+import {POFactory} from "../../pages/pageFactory";
+import {urlData} from "../../data/url.data";
+import {credentialsData} from "../../data/credentials.data";
+import {waitForCondition} from "../../helpers/common.helper";
+import {getLaunchesComponentsData} from "../../helpers/apiRequest.helper";
+import {LaunchesAPIDataType, LaunchesUIDataType} from "../../data/types.data";
 
 let loginPage: ReturnType<POFactory["getLoginPage"]>;
 let homePage: ReturnType<POFactory["getHomePage"]>;
 let launchesPage: ReturnType<POFactory["getLaunchesPage"]>;
-const USER = credentialsData.user.toLowerCase();
+const USER = "Avet_Sargsyan";
 
-test.beforeEach(async ({ page }) => {
+test.beforeEach(async ({page}) => {
   loginPage = new POFactory(page).getLoginPage();
   homePage = new POFactory(page).getHomePage();
   launchesPage = new POFactory(page).getLaunchesPage();
 
   await test.step("Open login page", async () => {
-    await loginPage.goto(urlData.loginPage, { waitUntil: "load" });
+    await loginPage.goto(urlData.loginPage, {waitUntil: "load"});
     await loginPage.logo.waitFor();
   });
 
@@ -49,7 +49,7 @@ test.beforeEach(async ({ page }) => {
   });
 });
 
-test.describe("Check Launches page @integration", () => {
+test.describe.only("Check Launches page @integration", () => {
   test("Check correctness of data for Launches components", async () => {
     const launchesData = await getLaunchesComponentsData(USER);
     const launchesCount = Object.keys(launchesData).length;

@@ -1,0 +1,30 @@
+stages:
+  - build
+  - lint
+  - test
+
+build-job:
+  stage: build
+  script:
+    - echo "Compiling the code..."
+    - echo "Build imitation complete."
+
+lint:
+  stage: lint
+  script:
+    - npm run lint:fix
+    - echo "Linter work is done"
+
+test:integration: # This job also runs in the test stage.
+  stage: test    # It can run at the same time as unit-test-job (in parallel).
+  script:
+    - echo "Run integration tests"
+    - npm run test:integration
+    - echo "Integration run is done"
+    - npm run allure:generate
+    - echo "Reports are generated"
+  artifacts:
+    when: always
+    paths:
+      - build/reports/allure-report/
+    expire_in: 1 week

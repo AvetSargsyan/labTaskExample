@@ -5,27 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea286cd7-73df-4456-84f6-05ade39b1d36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/types.data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/apiRequest.helper.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/launches.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/components/sidebar.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/launches.page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/integration/lanuches.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.sample" beforeDir="false" afterPath="$PROJECT_DIR$/.env.sample" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/envDataProcessor.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/envDataProcessor.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/url.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/url.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/pageFactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/pageFactory.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/login.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/login.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/lanuches.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/lanuches.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +28,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/WorkDirectories/labTaskExample",
+    "last_opened_file_path": "/Users/avetsargsyan/Documents/WorkDirectories/labTaskExample",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -67,9 +55,13 @@
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.all.executor": "Run",
+    "npm.allure:generate.executor": "Run",
+    "npm.allure:open.executor": "Run",
+    "npm.test:integration.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\WorkDirectories\\labTaskExample\\node_modules\\prettier",
     "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "C:\\WorkDirectories\\labTaskExample\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -86,21 +78,41 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.test:integration">
-    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="all" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="lint:fix" />
+        <script value="all" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="run" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="allure:generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="run" />
+        <script value="allure:generate" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="allure:open" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="allure:open" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -119,10 +131,19 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.test:integration" />
+        <item itemvalue="npm.all" />
+        <item itemvalue="npm.allure:open" />
+        <item itemvalue="npm.allure:generate" />
         <item itemvalue="npm.lint:fix" />
-        <item itemvalue="npm.run" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,6 +167,7 @@
       <workItem from="1709983947561" duration="8601000" />
       <workItem from="1710312489472" duration="1247000" />
       <workItem from="1710575448137" duration="13186000" />
+      <workItem from="1715429356560" duration="7724000" />
     </task>
     <servers />
   </component>
