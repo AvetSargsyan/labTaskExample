@@ -49,7 +49,7 @@ test.beforeEach(async ({page}) => {
   });
 });
 
-test.describe.only("Check Launches page @integration", () => {
+test.describe("Check Launches page @integration", () => {
   test("Check correctness of data for Launches components", async () => {
     const launchesData = await getLaunchesComponentsData(USER);
     const launchesCount = Object.keys(launchesData).length;

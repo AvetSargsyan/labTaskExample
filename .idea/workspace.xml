@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea286cd7-73df-4456-84f6-05ade39b1d36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/playwright.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/integration/lanuches.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/lanuches.spec.ts" afterDir="false" />
-    </list>
+    <list default="true" id="ea286cd7-73df-4456-84f6-05ade39b1d36" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +160,7 @@
       <workItem from="1709983947561" duration="8601000" />
       <workItem from="1710312489472" duration="1247000" />
       <workItem from="1710575448137" duration="13186000" />
-      <workItem from="1715429356560" duration="7724000" />
+      <workItem from="1715429356560" duration="8237000" />
     </task>
     <servers />
   </component>
